@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en"xmlns:th="http://www.thymeleaf.org">
+<html lang="en"xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'owners')}">
 <head>
     <meta charset="UTF-8">
     <title>List of Owner</title>
 </head>
 <body>
     <h1 th:text="'List of Owner'">Owner List</h1>
-    <table>
+    <table class="table table-striped">
         <thead>
         <tr>
             <th style="width: 150px;">Id</th>
