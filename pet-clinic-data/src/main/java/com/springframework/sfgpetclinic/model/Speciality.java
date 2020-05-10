@@ -1,13 +1,13 @@
 package com.springframework.sfgpetclinic.model;
 
 public class Speciality extends BaseEntity {
-    private String discription;
+    private String description;
 
-    public String getDiscription() {
-        return discription;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDiscription(String discription) {
-        this.discription = discription;
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
