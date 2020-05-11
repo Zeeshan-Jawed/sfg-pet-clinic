@@ -5,11 +5,14 @@ import com.springframework.sfgpetclinic.repository.OwnerRepository;
 import com.springframework.sfgpetclinic.repository.PetRepository;
 import com.springframework.sfgpetclinic.repository.PetTypeRepository;
 import com.springframework.sfgpetclinic.service.OwnerService;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
 
-
+@Service
+@Profile("springdatajpa")
 public class OwnerSDJpaService implements OwnerService {
     private final OwnerRepository ownerRepository;
     private final PetRepository petRepository;
